@@ -1,8 +1,6 @@
-cd public_html/thaw.intra.sandbox
-git checkout thaw.intra.sandbox
 git pull
-cd php/CRON
-php compile.php
-cd ../../docroot
+cd php/prism/scripts
+php prod.php
+cd ../../static
 npm install
 npm run build
