@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 
-import '../node_modules/bootstrap/scss/bootstrap.scss';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './scss/style.scss';
 
 import { apiRoute } from './utilities/api-route';
@@ -193,7 +193,7 @@ class App extends React.Component {
         <div className={"env-tape " + props.env}>
           <center>
             You are on <strong>{props.env}</strong>
-            <a href={apiRoute("public", "testplan")} target="_BLANK">
+            <a href={apiRoute("public", "testplan")} target="_BLANK" rel="noopener noreferrer">
               See Testplans
             </a>
           </center>
